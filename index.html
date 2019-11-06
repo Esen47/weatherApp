@@ -12,15 +12,20 @@
 <body>
     <div class="container my-5 mx-auto">
         <h1 class="text-muted text-center my-4">Weather forecast</h1>
+        <!-- Search bar -->
         <form class="change-location my-4 text-center text-muted">
             <label for="city">Enter a location for weather information</label>
             <input type="text" name="city" class="form-control p-4">
         </form>
+        <!-- Search bar END -->
         <div class="card shadow-lg rounded">
+            <!-- Displaying day/night img based on time of the day for current location -->
             <img src="https://via.placeholder.com/400x300" class="time card-img-top">
             <div class="icon bg-light text-center mx-auto">
                 
             </div>
+            <!-- Displaying day/night img based on time of the day for current location END -->
+            <!-- Weather forecast details -->
             <div class="details text-center text-muted text-uppercase">
                 <h5 class="my-3">City name</h5>
                 <div class="my-3">Weather condition</div>
@@ -29,6 +34,7 @@
                     <span>&deg;C</span>
                 </div>
             </div>
+            <!-- Weather forecast details END -->
         </div>
     </div>
 

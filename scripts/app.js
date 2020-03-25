@@ -9,7 +9,7 @@ const forecast = new Forecast();
 const updateUI = (data) => {
     //destructure properties
     const{ cityDetails, weatherDetails } = data;
-
+    
     details.innerHTML = `
         <h5 class="my-2">${cityDetails.EnglishName}</h5>
         <div class="my-2">${weatherDetails.WeatherText}</div>

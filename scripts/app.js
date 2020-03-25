@@ -8,7 +8,7 @@ const forecast = new Forecast();
 //function to update the UI with weather information
 const updateUI = (data) => {
     //destructure properties
-    const{ cityDetails, weatherDetails } = data;
+    const{ cityDetails, weatherDetails } = data;  
     
     details.innerHTML = `
         <h5 class="my-2">${cityDetails.EnglishName}</h5>
@@ -19,7 +19,7 @@ const updateUI = (data) => {
         </div>
     `;
     //update the night/day & icon images
-    const iconSrc = `../img/icons/${weatherDetails.WeatherIcon}.svg`;
+    const iconSrc = `./img/icons/${weatherDetails.WeatherIcon}.svg`;
     icon.setAttribute('src', iconSrc);
 
     //setting condition using ternary operator
